@@ -35,17 +35,6 @@ ul{
     font-family: "Oswald";
 }
 
-// When I'm on the homepage,
-// the "home" nav should be active
-
-// When I'm on the purchase page,
-// the "purchase" nav should be active
-
-// ETC
-
-// CONTENT
-
-
 %container {
     max-width: 1200px;
     margin: 0 auto;
@@ -83,28 +72,33 @@ position: relative;
 width: 100%;
 text-align: center;
 margin: 0 auto;
-    img, p{
-  display: inline-block;
-    }
     p{
   width: 750px;
+  margin: 0 auto;
     }
     .isa{
     font-family: "Oswald";
     }
     .headshot {
-  border-radius: 100%;
-  width: 100px;
-  float: left;
-  margin-right: 15px;
+  border-radius: 10%;
+  width: 30%;
+  margin-bottom: 15px;
     }
     .imagedos{
     border-radius: 10px;
-    width: 100px;
-    float: right;
-    margin-left: 15px;
+    width: 30%;
     margin-top: 15px;
     }
+}
+
+footer{
+    background: gray;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+        p{
+            font-family: "Oswald";
+        }
 }
 
 h2{
@@ -144,10 +138,11 @@ h2{
 
     footer{
         background-color: gray;
-        position:absolute;
         border-radius: 10px;
         right: 0;
+        bottom: 0;
         width: 100%;
+        height: 50px;
         .copy{
         font-family: "Oswald";
         }
@@ -164,7 +159,7 @@ h2{
         }
         .headshot, .imagedos{
             width: 100%;
-            height: 250px;
+            height: 350px;
             border-radius: 10px;
         }
     }
