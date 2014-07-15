@@ -114,7 +114,7 @@ h2{
 
 @media screen and (max-width:500px){
   html{
-    min-width: 500px;
+    max-width: 500px;
   }
 
   .wrap{
@@ -163,7 +163,7 @@ ul{
     .about{
         display: inline-block;
         .headshot, .imagedos{
-            width: 33% !important;
+            width: 33%;
             max-width: 50%;
         }
         .headshot{
