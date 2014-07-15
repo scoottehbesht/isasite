@@ -117,21 +117,31 @@ p {
   border-radius: 10px;
 }
 
+.about {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
 .about img, .about p {
   display: inline-block;
+}
+.about p {
+  width: 750px;
 }
 .about .isa {
   font-family: "Oswald";
 }
 .about .headshot {
   border-radius: 100%;
-  width: 33%;
+  width: 100px;
   float: left;
   margin-right: 15px;
 }
 .about .imagedos {
+  position: relative;
   border-radius: 10px;
-  width: 50%;
+  width: 100px;
   float: right;
   margin-left: 15px;
   margin-top: 15px;
@@ -167,7 +177,6 @@ h2 {
 
 p {
   font-family: "Roboto";
-  max-width: 500px;
 }
 
 footer {
@@ -184,4 +193,18 @@ footer .copy {
 ul {
   position: absolute;
   right: 0;
+}
+
+.about {
+  display: inline-block;
+}
+.about .headshot, .about .imagedos {
+  width: 33% !important;
+  max-width: 50%;
+}
+.about .headshot {
+  float: left;
+}
+.about .imagedos {
+  float: right;
 }

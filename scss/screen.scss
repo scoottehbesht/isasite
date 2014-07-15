@@ -10,24 +10,24 @@ a {
   color: #800000;
 }
 
-.pure-menu-horizontal{
+    .pure-menu-horizontal{
     text-align: center;
   }
 
-.pure-grid{
+    .pure-grid{
     font-family: "Oswald";
 }
 // NAV
 
-.nav li {
+    .nav li {
     border-bottom: 3px solid #333;
 }
 
-.home li.home{
+    .home li.home{
     border-color: blue;
 }
 
-.performances li.performances{
+    .performances li.performances{
     border-color: blue;
 }
 
@@ -51,7 +51,7 @@ ul{
     margin: 0 auto;
 }
 
-.hero-grid {
+    .hero-grid {
     @extend %container;
 }
 
@@ -59,7 +59,7 @@ p{
     font-family: "Roboto";
 }
 
-.pure-menu-heading{
+    .pure-menu-heading{
     font-family: "Oswald"
 }
 
@@ -79,25 +79,33 @@ p{
 }
 
 .about{
-img, p{
+position: relative;
+width: 100%;
+text-align: center;
+margin: 0 auto;
+    img, p{
   display: inline-block;
-}
-.isa{
+    }
+    p{
+  width: 750px;
+    }
+    .isa{
     font-family: "Oswald";
-}
-.headshot {
+    }
+    .headshot {
   border-radius: 100%;
-  width: 33%;
+  width: 100px;
   float: left;
   margin-right: 15px;
-}
-.imagedos{
+    }
+    .imagedos{
+    position: relative;
     border-radius: 10px;
-    width: 50%;
+    width: 100px;
     float: right;
     margin-left: 15px;
     margin-top: 15px;
-}
+    }
 }
 
 h2{
@@ -134,7 +142,6 @@ h2{
 
 p {
   font-family: "Roboto";
-  max-width: 500px;
 }
 
 footer{
@@ -151,4 +158,18 @@ footer{
 ul{
     position: absolute;
     right: 0;
+}
+
+    .about{
+        display: inline-block;
+        .headshot, .imagedos{
+            width: 33% !important;
+            max-width: 50%;
+        }
+        .headshot{
+            float: left;
+        }
+        .imagedos{
+            float: right;
+        }
 }
